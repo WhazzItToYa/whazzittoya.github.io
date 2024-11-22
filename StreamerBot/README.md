@@ -1,2 +1,6 @@
-This is a collection of Streamer.Bot information
+# [![Streamer.bot](https://streamer.bot/logo-transparent.svg) Streamer.bot](https://streamer.bot)
+
+
+
+
 
