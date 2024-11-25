@@ -1,3 +1,4 @@
 [submodule "TerminalChat"]
 	path = Overlays/TerminalChat
 	url = https://github.com/WhazzItToYa/TerminalChat.git
+        branch = main
