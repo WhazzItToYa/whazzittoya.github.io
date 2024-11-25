@@ -1,1 +1,1 @@
-# [Streamer.bot for Developers](StreamerBotForDevelopers)
+# [Streamer.bot for Developers](StreamerbotForDevelopers)
