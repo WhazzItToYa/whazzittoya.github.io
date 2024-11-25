@@ -1,8 +1,8 @@
-  - name: Submodule Sync
+            - name: Sync TerminalChat
   # You may pin to the exact commit or the version.
   # uses: mheap/submodule-sync-action@a06903a4e38f042f6f52cc88d184ec1c930ee12d
-  uses: mheap/submodule-sync-action@v1
-  with:
+uses: mheap/submodule-sync-action@v1
+with:
     # The GitHub API token to use
     token: # optional, default is ${{ github.token }}
     # The path in the repo to update
