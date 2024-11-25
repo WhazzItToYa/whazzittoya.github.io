@@ -3,19 +3,30 @@
 This is a quickstart guide for the impatient, who already have experience creating solutions in other languages or frameworks, and want to get up to speed quickly in Streamer.bot.  It is not a replacement for the [full documentation](https://docs.streamer.bot/ ).  In fact, you should at least read [the introduction](https://docs.streamer.bot/get-started/introduction ) to get oriented to the main building blocks (triggers, actions/subactions, and variables (local & global)), and then come back here to learn what might be the same or different from other programming environments.
 
 ## Arguments, a.k.a. "local" Variables
-* The terms "variable" and "argument" are used interchangeably in docs & Discord.
-* Arguments are most closely akin to local variables - they only exist for the duration of the Action, and can only be referenced from the subactions of the action.
-* The value of an argument can be substituted into a subaction field by enclosing it with "%" characters, e.g. `%user% is the smartest!`
+* The terms "**variable**" and "**argument**" are used interchangeably in docs & Discord.
+* Arguments are most closely akin to **local variables** - they only exist for the duration of the Action, and can only be referenced from the subactions of the action.
+* Arguments get set in a few ways:
+  * The most common is **from a trigger**: Every trigger supplies a number of arguments related to the type of trigger, describing the event.
+  * Some **subactions** set arguments as their output.
+  * An explicit **Set Argument** subaction
+  * **C# `CPH.SetGlobalVar()`**
+* The value of an argument can be **substituted** into a subaction's field by enclosing it with "%" characters, e.g. "`%user% is the smartest!`"
 * Some subaction fields are specifically for naming an argument.  In those cases, do not surround the argument name with "%" characters (since you're not using its name, not its value).  Examples are the Variable fields of the "If/Else", "Set Argument", or the Argument field of "Set Global Variable".
 
 ## Global Variables
-* As their name implies, **global variables** exist independently of any action.  You can't substitute them directly into your values as you can with arguments: you use the Get and Set Global subactions to put their values into arguments.
+* As their name implies, **global variables** exist independently of any action.  You can set their value in one action, and get the value in another.
+* You can't substitute them directly into your values as you can with arguments: you first need to Get them into an argument, and then use the "`%...%`" syntax to substitute the argument.
   * *Except* "persisted global variables" can be substituted with the "~" character: `~myGlobalVar~`
 * Speaking of which, there are 4 categories of global variables, which occupy different namespaces:
   * Persisted global vars: Their values are retained across SBot runs.
   * Temporary (non-persisted) global vars: The values go away when SBot is closed.
   * Persisted User vars: have a different value for each user, and are saved across runs.
   * Temporary User vars: have a different value for each user, and are cleared when SBot is closed.
+
+## Automatic arguments, and expressions
+* There are some arguments that are always available. e.g., `%date%`, `%unixtime%`
+* Math expressions can be evaluated and substituted into values with the "`$math(expression)$`" macro.  E.g.,
+* **Exceptions**  (there are a number of cases where auto variables & math expressions don't seem to work.  Need to do a test to find out which)
 
 ## Actions
 
