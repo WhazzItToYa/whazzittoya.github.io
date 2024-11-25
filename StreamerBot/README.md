@@ -1,6 +1,1 @@
-# [![Streamer.bot](https://streamer.bot/logo-transparent.svg) Streamer.bot](https://streamer.bot)
-
-
-
-
-
+# [Streamer.bot for Developers](StreamerBotForDevelopers)
