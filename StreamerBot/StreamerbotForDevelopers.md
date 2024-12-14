@@ -9,12 +9,13 @@ This is a quickstart guide for the impatient, who already have experience creati
   * The most common is **from a trigger**: Every trigger supplies a number of arguments related to the type of trigger, describing the event.
   * Some **subactions** set arguments as their output.
   * An explicit **Set Argument** subaction
-  * **C# `CPH.SetGlobalVar()`**
+  * **C\# `CPH.SetArgument(name, value)`**
 * The value of an argument can be **substituted** into a subaction's field by enclosing it with "%" characters, e.g. "`%user% is the smartest!`"
 * Some subaction fields are specifically for naming an argument.  In those cases, do not surround the argument name with "%" characters (since you are specifying the variable name, not its value).  Examples are:
   * Variable fields of the "If/Else"
   * The Argument field of "Set Argument"
   * The Argument optionof "Set Global Variable".
+* When one Action is invoked from another action (E.g., with Run Action or an If/Else), then all the variables of the invoking action are passed to the invoked action.
 
 ## Global Variables
 * As their name implies, **global variables** exist independently of any action.  You can set their value in one action, and get the value in another.
