@@ -16,6 +16,9 @@ This is a quickstart guide for the impatient, who already have experience creati
   * The Argument field of "Set Argument"
   * The Argument optionof "Set Global Variable".
 * When one Action is invoked from another action (E.g., with Run Action or an If/Else), then all the variables of the invoking action are passed to the invoked action.
+* **Types**: Values have specific C# types, like `int`, `float`, and `string`.  This mainly affects whether the "Less Than" and "Greater Than" operators do string or numeric comparison in an If/Else.  A value's type is deteremined by:
+  * If the "Auto Type" checkbox (in the "Set Argument" or "If/Else" subaction) is unchecked, then it is a string.
+  * If it is checked, then the type is determined by what the value "looks" like - if it looks like an int, float, or boolean, then it becomes those types.  Otherwise it becomes a string.
 
 ## Global Variables
 * As their name implies, **global variables** exist independently of any action.  You can set their value in one action, and get the value in another.
