@@ -10,11 +10,14 @@ This is a quickstart guide for the impatient, who already have experience creati
   * Some **subactions** set arguments as their output.
   * An explicit **Set Argument** subaction
   * **C\# `CPH.SetArgument(name, value)`**
-* The value of an argument can be **substituted** into a subaction's field by enclosing it with "%" characters, e.g. "`%user% is the smartest!`"
+* The value of an argument can be **substituted** into a subaction's field by enclosing it with "%" characters, e.g. "`%user% is the smartest!`".  Exceptions are:
+  * Get Global Variable: Default Value
+  * Set Global Variable: Value/Increment/Decrement fields (use the Argument option with a naked argument name instead, see below)
+  * (possibly others)
 * Some subaction fields are specifically for naming an argument.  In those cases, do not surround the argument name with "%" characters (since you are specifying the variable name, not its value).  Examples are:
   * Variable fields of the "If/Else"
   * The Argument field of "Set Argument"
-  * The Argument optionof "Set Global Variable".
+  * The Argument option of "Set Global Variable".
 * When one Action is invoked from another action (E.g., with Run Action or an If/Else), then all the variables of the invoking action are passed to the invoked action.
 * **Types**: Values have specific C# types, like `int`, `float`, and `string`.  This mainly affects whether the "Less Than" and "Greater Than" operators do string or numeric comparison in an If/Else.  A value's type is deteremined by:
   * If the "Auto Type" checkbox (in the "Set Argument" or "If/Else" subaction) is unchecked, then it is a string.
@@ -36,7 +39,7 @@ This is a quickstart guide for the impatient, who already have experience creati
   * `$math(%points% + 30)$` ==> Adds 30 to the variable `points`
   * `$math(rUnid(1,%numViewers%))$` ==> Picks a random whole number between 1 & the value of the %numViewers% variable.
   * `$math(%numViewers% > 10 && %numViewers% < 20)$` ==> The result of the logical boolean expression.  Useful as a workaround for the lack of support for AND, OR, NOT in the [If/Else subactions.](https://docs.streamer.bot/api/sub-actions/core/logic/if-else).
-* **Exceptions**  (TODO: there are a number of cases where auto variables & math expressions don't seem to work.  Need to do a test to find out which)
+* **Exceptions**  (TODO: there are a number of cases where auto variables & math expressions don't seem to work, where substitution of normal variables do.  Need to do a test to find out which)
 
 ## Actions
 
