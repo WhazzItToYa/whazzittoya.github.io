@@ -50,5 +50,7 @@ This is a quickstart guide for the impatient, who already have experience creati
   * ... unless the queue is marked a "blocking".  In that case, only one action executes at a time.
 * Subactions of an action execute sequentially.
   * ... unless the action is marked concurrent.  Then all top-level subactions and groups are run concurrently with each other.  Subactions within a group are executed sequentially.
-* Because of the high levels of concurrency, beware of accessing global variables - while an action is executing, the global variables it is reading and writing may be getting changed by other actions.  Standard read/modify/write logic will not work correctly when executed across concurrent actions.
+* Because of the high levels of concurrency, beware of trying to share information between actions using global variables.  While an action is executing, the global variables it is reading and writing may be getting changed by other actions.  Standard read/modify/write logic will not work correctly when executed across concurrent actions.  Even the Set Global Increment and Decrement options are not atomic.  The only ways of guaranteeing you don't get race conditions accessing variables from different actions are to make sure actions which access variables never execute at the same time, only one after another.  Strategies for doing this include:
+  * Assigning all actions which modify a given variable to the same blocking queue.
+  * Arranging your logic so that one action accessing a variable can only execute strictly _after_ another action, say, by having one action modify the variable, then using Run Action to run the other action which modifies the variable.
 
