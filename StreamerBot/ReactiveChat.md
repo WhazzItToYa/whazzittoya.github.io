@@ -2,7 +2,9 @@
 
 Puts PNGTuber-like avatars into your stream which react when selected users chat.  Unrelated to TTS.  Can optionally display the messages, or play random sounds.
 
-  <video src="ReactiveChat.mp4" width="50%"></video>
+<video controls width="50%">
+    <source src="ReactiveChat.mp4" type="video/mp4">
+</video>
 
 ## Prerequisites
 * OBS (developed & tested on version 30)
@@ -48,10 +50,7 @@ U0JBRR+LCAAAAAAABADtXNluG0cWfQ+QfyAE+C1l1L7kzePEjoGJHViBB4NxHm5tUiNkk8NFsWP433Or
   * `mouthOpenDuration` : Milliseconds that the mouth should remain open (and the chat message displayed, if using that feature)
   * `soundFolder` : The path of the sound folder, e.g., `c:\StreamSounds\ReactiveChat`.  If you don't want sounds, leave as-is.
     * If you set up to have different sounds per user above, then add a `\%userName%` at the end.  E.g., `c:\StreamSounds\ReactiveChat\%userName%`.
-    
-  ![Config Settings](ReactiveChat-config.png
-
+  ![Config Settings](ReactiveChat-config.png)
 3. Under Settings > Groups, Create a group called "PNG Chatters", and add your friend(s) accounts to the group.  This will determine who will get an avatar.
-
   ![Group](ReactiveChat-group.png)
 
