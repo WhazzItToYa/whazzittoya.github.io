@@ -1,4 +1,4 @@
-# Description
+# Reactive Chat for OBS & Streamer.bot
 
 Puts PNGTuber-like avatars into your stream which react when selected users chat.  Unrelated to TTS.  Can optionally display the messages, or play random sounds.
 
@@ -7,12 +7,12 @@ Puts PNGTuber-like avatars into your stream which react when selected users chat
 ## Prerequisites
 * OBS (developed & tested on version 30)
 * Streamer.bot 0.2.4 or newer
-* Idle & speaking images for each friend whose chat you want a reactive avatar for
+* Idle & speaking images for each friend whose chat messages you want a reactive avatar for
 * A friend
 
-# Installation & Setup
+## Installation & Setup
 
-## Avatar images in OBS
+### Avatar images in OBS
 
 1. In the OBS scene you want your reactive PNGs, create a Source Group called "Chat Character *twitch-login*", where *twitch-login* is the twitch user login (the lowercase, no-spaces name) of a user you want the avatar for.
 2. Inside the group, create two Image Sources titled "Chat Character *twitch-login* Open" and "Chat Character *twitch-login* Closed", representing the "mouth open" and "mouth closed" images of the avatar.
@@ -22,7 +22,7 @@ Puts PNGTuber-like avatars into your stream which react when selected users chat
 
 ![OBS Sources](ReactiveChat-sources.png)
 
-## Avatar sounds
+### Avatar sounds
 
 If you don't want sounds to play when a user chats, then skip this section.
 
@@ -33,7 +33,7 @@ If you don't want sounds to play when a user chats, then skip this section.
 
 ![Sound folder structure](ReactiveChat-sounds.png)
 
-## Streamer.bot
+### Streamer.bot
 
 **Import Code** (2025/01/07)
 ```
