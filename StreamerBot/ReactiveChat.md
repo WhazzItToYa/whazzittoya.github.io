@@ -2,7 +2,7 @@
 
 Puts PNGTuber-like avatars into your stream which react when selected users chat.  Unrelated to TTS.  Can optionally display the messages, or play random sounds.
 
-![Showcase Video](ReactiveChat.mp4)
+  <video src="ReactiveChat.mp4" width="50%"></video>
 
 ## Prerequisites
 * OBS (developed & tested on version 30)
@@ -20,7 +20,7 @@ Puts PNGTuber-like avatars into your stream which react when selected users chat
 3. (optional) Inside the group, create a GDI Text source titled "Chat Character *twitch-login* Message".  This will display the chat messages sent by the user.  Set whatever properties (color, font, alignment) that you'd like.
 4. Repeat for each user you want an avatar for.
 
-![OBS Sources](ReactiveChat-sources.png)
+  ![OBS Sources](ReactiveChat-sources.png)
 
 ### Avatar sounds
 
@@ -31,7 +31,7 @@ If you don't want sounds to play when a user chats, then skip this section.
   * Create subfolders, one for each user, named "*twitch-login*" (the same convention as above)
 * Place all the sound files you want to have play randomly, into the folder(s).
 
-![Sound folder structure](ReactiveChat-sounds.png)
+  ![Sound folder structure](ReactiveChat-sounds.png)
 
 ### Streamer.bot
 
@@ -49,9 +49,9 @@ U0JBRR+LCAAAAAAABADtXNluG0cWfQ+QfyAE+C1l1L7kzePEjoGJHViBB4NxHm5tUiNkk8NFsWP433Or
   * `soundFolder` : The path of the sound folder, e.g., `c:\StreamSounds\ReactiveChat`.  If you don't want sounds, leave as-is.
     * If you set up to have different sounds per user above, then add a `\%userName%` at the end.  E.g., `c:\StreamSounds\ReactiveChat\%userName%`.
     
-![Config Settings](ReactiveChat-config.png)
+  ![Config Settings](ReactiveChat-config.png
 
 3. Under Settings > Groups, Create a group called "PNG Chatters", and add your friend(s) accounts to the group.  This will determine who will get an avatar.
 
-![Group](ReactiveChat-group.png)
+  ![Group](ReactiveChat-group.png)
 
