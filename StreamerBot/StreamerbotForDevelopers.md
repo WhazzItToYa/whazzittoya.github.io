@@ -18,7 +18,7 @@ This is a quickstart guide for the impatient, who already have experience creati
   * Variable fields of the "If/Else"
   * The Argument field of "Set Argument"
   * The Argument option of "Set Global Variable".
-* When one Action is invoked from another action (E.g., with Run Action or an If/Else), then all the variables of the invoking action are passed to the invoked action.
+* When one Action is invoked from another action (E.g., with Run Action or an If/Else), then all the variables of the invoking action are passed to the invoked action.  Likewise, any variable that the invoked action sets, are available when it returns to the invoking action (as long as it used "Run Immediately").
 * **Types**: Values have specific C# types, like `int`, `float`, and `string`.  This mainly affects whether the "Less Than" and "Greater Than" operators do string or numeric comparison in an If/Else.  A value's type is deteremined by:
   * If the "Auto Type" checkbox (in the "Set Argument" or "If/Else" subaction) is unchecked, then it is a string.
   * If it is checked, then the type is determined by what the value "looks" like - if it looks like an int, float, or boolean, then it becomes those types.  Otherwise it becomes a string.
@@ -27,7 +27,7 @@ This is a quickstart guide for the impatient, who already have experience creati
 * As their name implies, **global variables** exist independently of any action.  You can set their value in one action, and get the value in another.
 * You can't substitute them directly into your values as you can with arguments: you first need to Get them into an argument, and then use the "`%...%`" syntax to substitute the argument.
   * *Except* "persisted global variables" can be substituted with the "~" character: `~myGlobalVar~`
-* Speaking of which, there are 4 categories of global variables, which occupy different namespaces:
+* Speaking of which, there are 4 categories of global variables, which occupy different namespaces (i.e., they are Get and Set independently of each other, and can contain different values, even if they have the same name):
   * Persisted global vars: Their values are retained across SBot runs.
   * Temporary (non-persisted) global vars: The values go away when SBot is closed.
   * Persisted User vars: have a different value for each user, and are saved across runs.
@@ -39,6 +39,7 @@ This is a quickstart guide for the impatient, who already have experience creati
   * `$math(%points% + 30)$` ==> Adds 30 to the variable `points`
   * `$math(rUnid(1,%numViewers%))$` ==> Picks a random whole number between 1 & the value of the %numViewers% variable.
   * `$math(%numViewers% > 10 && %numViewers% < 20)$` ==> The result of the logical boolean expression.  Useful as a workaround for the lack of support for AND, OR, NOT in the [If/Else subactions.](https://docs.streamer.bot/api/sub-actions/core/logic/if-else).
+  * The expression language is based on the [mXparser library](https://mathparser.org/), where you can find full documentation.
 * **Exceptions**  (TODO: there are a number of cases where auto variables & math expressions don't seem to work, where substitution of normal variables do.  Need to do a test to find out which)
 
 ## Actions
