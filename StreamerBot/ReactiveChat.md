@@ -54,3 +54,4 @@ U0JBRR+LCAAAAAAABADtXNluG0cWfQ+QfyAE+C1l1L7kzePEjoGJHViBB4NxHm5tUiNkk8NFsWP433Or
 3. Under Settings > Groups, Create a group called "PNG Chatters", and add your friend(s) accounts to the group.  This will determine who will get an avatar.
   ![Group](ReactiveChat-group.png)
 
+
