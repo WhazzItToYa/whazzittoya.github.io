@@ -2,6 +2,7 @@
 
 ## Guides
 * [Streamer.bot for Developers](StreamerbotForDevelopers)
+* [The Current State of the Kick API](KickAPI)
 
 ## Extensions
 * [Karafun Song Info](https://github.com/WhazzItToYa/StreamerbotKarafun) : Hook [Karafun](https://karafun.com) up to Streamer.bot and trigger actions on song changes.
