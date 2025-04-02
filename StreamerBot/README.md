@@ -1,5 +1,5 @@
 # Whazz's Streamer.bot stuff
-
+I've chosen Streamer.bot as my main framework for streaming-related automation.  Here's some stuff I've done in it.
 ## Guides
 * [Streamer.bot for Developers](StreamerbotForDevelopers)
 * [The Current State of the Kick API](KickAPI)
