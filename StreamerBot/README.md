@@ -5,6 +5,7 @@
 * [The Current State of the Kick API](KickAPI)
 
 ## Extensions
+* [Cooldown Utilities](https://github.com/WhazzItToYa/Streamerbot-CooldownUtilities) : Implement cooldowns within your actions.
 * [Karafun Song Info](https://github.com/WhazzItToYa/StreamerbotKarafun) : Hook [Karafun](https://karafun.com) up to Streamer.bot and trigger actions on song changes.
 * [Reactive Chat](ReactiveChat) : Reactive images when people chat in your stream.
 * [Quick Stream Deck Moderation buttons](https://extensions.streamer.bot/t/quick-twitch-chat-moderation-stream-deck-buttons/1746) : Quickly select users for moderation.
