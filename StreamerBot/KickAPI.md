@@ -24,12 +24,13 @@
 | Get User info |               X         |  X |
 | Get Channel Info |            X         |    |
 | Run poll |                              |  X |
+| List/Search Available Categories |   X  |    |
+| Get Category Info (name, thumbnail) | X |    |
 | Change Category |             X         |  X |
-| List Available Categories |   X         |    |
-| Category Info |               X         |    |
 | Change Title |                X         |  X |
 | Make Clip |                             |  X |
 | Get Clips |                             |  X |
+| List/Search Livestreams | X |   |
 | **EVENTS** ([note](#on-events)) |
 | New follower |                X         |  X |
 | Chat Message Received |       X         |  X |
