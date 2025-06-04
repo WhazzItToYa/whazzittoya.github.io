@@ -1,14 +1,14 @@
 # Kick API vs. Kick.bot Feature Comparison
-(as of Feb 24, 2025)
+(as of June 4, 2025)
 
 | FEATURE | Kick API | kick.bot |
 |---------| :-------: | :--------: |
 | **REQEUSTS** |
-| Ban |                                   |  X |
-| Unban |                                 |  X |
+| Ban |                         X         |  X |
+| Unban |                       X         |  X |
 | Timeout |                               |  X |
 | Send Message |                X         |  X |
-| Reply to Message |                      |  X |
+| Reply to Message |            X         |  X |
 | Pin/Unpin Message |                     |  X |
 | Delete Message |                        |  X |
 | Clear Chat |                            |  X |
@@ -30,16 +30,17 @@
 | Change Title |                X         |  X |
 | Make Clip |                             |  X |
 | Get Clips |                             |  X |
-| List/Search Livestreams | X |   |
+| List/Search Livestreams |     X         |   |
 | **EVENTS** ([note](#on-events)) |
 | New follower |                X         |  X |
 | Chat Message Received |       X         |  X |
 | New Pinned Message |                    |  X |
 | Chat Message Deleted |                  |  X |
-| User Banned/Unbanned |                  |  X |
+| User Banned |                 X         |  X |
+| User Unbanned |                         |  X |
 | Poll Completed |                        |  X |
-| Stream Started/Ended |                  |  X |
-| Stream Title/Game Changed |             |  X |
+| Stream Started/Ended |        X         |  X |
+| Stream Title/Game Changed |   X         |  X |
 | Sub |                         X         |  X |
 | Subs Gifted |                 X         |  X |
 | Channel Raided |                        |  X |
