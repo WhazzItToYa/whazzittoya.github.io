@@ -47,4 +47,4 @@
 
 ## On Events
 
-The Kick API delivers events to bots by using Webhooks, a cumbersome and costly mechanism that doesn't integrate well with standalone applications like Streamer.bot.
+The Kick API delivers events to bots by using Webhooks. Webhooks work fine for cloud-based bots, since those bots already have (and pay for) internet-facing server infrastructure to host the webhooks. But streamer.bot is entirely self-hosted on the streamer's PC, so has no way to receive webhook requests. Furthermore, the streamer.bot team provides it for free, so there is no revenue to pay for setting up and running webhook server infrastructure.
