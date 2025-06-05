@@ -20,4 +20,4 @@ I've chosen Streamer.bot as my main framework for streaming-related automation. 
 * [SociaBuzz Integration](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz) : Get notifications of donations from SociaBuzz
 
 ## Other
-* Userscript (Tampermonkey, Greasemonkey, etc) to sort dropdowns alphabetically in the [OBS Raw playground](https://obs-raw.streamer.bot/): Here
+* [Userscript (Tampermonkey, Greasemonkey, etc) to sort dropdowns alphabetically](OBSRaw-Sort.user.js) in the [OBS Raw playground](https://obs-raw.streamer.bot/)
