@@ -16,7 +16,6 @@ I've chosen Streamer.bot as my main framework for streaming-related automation. 
 * [Karafun Song Info](https://github.com/WhazzItToYa/StreamerbotKarafun) : Hook [Karafun](https://karafun.com) up to Streamer.bot and trigger actions on song changes.
 * [Reactive Chat](ReactiveChat) : Reactive images when people chat in your stream.
 * [Quick Stream Deck Moderation buttons](https://extensions.streamer.bot/t/quick-twitch-chat-moderation-stream-deck-buttons/1746) : Quickly select users for moderation.
-* [FiveM Commands](https://github.com/WhazzItToYa/Streamerbot-FiveM) : Send console commands to a FiveM GTA V client.
 * [SociaBuzz Integration](https://github.com/WhazzItToYa/Streamerbot-SociaBuzz) : Get notifications of donations from SociaBuzz
 
 ## Other
