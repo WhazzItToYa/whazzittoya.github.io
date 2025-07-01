@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Alphabetize obs-raw Dropdowns
 // @namespace    https://whazzittoya.github.io/
-// @version      2025-06-01
-// @description  try to take over the world!
+// @version      2025-06-30
+// @description  Sorts dropdowns on the obs-raw website
 // @author       You
 // @match        https://obs-raw.streamer.bot/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=streamer.bot
 // @grant        none
+// @updateURL    https://whazzittoya.github.io/StreamerBot/OBSRaw-Sort.user.js
+// @downloadURL  https://whazzittoya.github.io/StreamerBot/OBSRaw-Sort.user.js
 // ==/UserScript==
 
 (function() {
@@ -17,8 +19,8 @@
         const items = Array.from(vMenu.children);
 
         items.sort((a, b) => {
-            const aText = a.querySelector(".v-list-item-title")?.textContent.trim() || "";
-            const bText = b.querySelector(".v-list-item-title")?.textContent.trim() || "";
+            const aText = a.querySelector(".v-list-item-title")?.textContent.trim() ?? "";
+            const bText = b.querySelector(".v-list-item-title")?.textContent.trim() ?? "";
             return aText.localeCompare(bText);
         });
 
