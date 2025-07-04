@@ -10,6 +10,7 @@ I've chosen Streamer.bot as my main framework for streaming-related automation. 
 * [(utility) Random Numbers Without Repetition](https://discord.com/channels/834650675224248362/1295580155904921674) : Choose random numbers without duplicates
 * [Choose Random Twitch Users with Group & Lurker Exclusions](https://discord.com/channels/834650675224248362/1303263141592825928) : Like Twitch > Add Random Users, but better.
 * [Send Keypress to Window](https://github.com/WhazzItToYa/Streamerbot-SendInputToWindow) : Sends a sequence of keypresses to a given window.
+* [Extension Web Configurator](https://github.com/WhazzItToYa/Streamerbot-WebConfigurator/blob/main/README.md): Give your extensions a browser-based configuration editor.
 
 ### Full Extensions
 * [FiveM Console Commands](https://github.com/WhazzItToYa/Streamerbot-FiveM) : Send commands to the FiveM GTAV client console
