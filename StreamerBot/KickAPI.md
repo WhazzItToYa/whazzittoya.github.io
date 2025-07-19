@@ -1,12 +1,11 @@
 # Kick API vs. Kick.bot Feature Comparison
-(as of June 4, 2025)
+(as of July 8, 2025)
 
 | FEATURE | Kick API | kick.bot |
 |---------| :-------: | :--------: |
 | **REQEUSTS** |
-| Ban |                         X         |  X |
-| Unban |                       X         |  X |
-| Timeout |                               |  X |
+| Ban/Unban                     X         |  X |
+| (un)Timeout |                 X         |  X |
 | Send Message |                X         |  X |
 | Reply to Message |            X         |  X |
 | Pin/Unpin Message |                     |  X |
@@ -19,7 +18,7 @@
 | Add/Remove OG |                         |  X |
 | Add/Remove VIP |                        |  X |
 | Get Followers |                         |  X |
-| Get Viewer count |                      |  X |
+| Get Viewer count |            X         |  X |
 | Get Follow Age |                        |  X |
 | Get User info |               X         |  X |
 | Get Channel Info |            X         |    |
@@ -31,6 +30,7 @@
 | Make Clip |                             |  X |
 | Get Clips |                             |  X |
 | List/Search Livestreams |     X         |   |
+|---------| 
 | **EVENTS** ([note](#on-events)) |
 | New follower |                X         |  X |
 | Chat Message Received |       X         |  X |
@@ -47,4 +47,4 @@
 
 ## On Events
 
-The Kick API delivers events to bots by using Webhooks. Webhooks work fine for cloud-based bots, since those bots already have (and pay for) internet-facing server infrastructure to host the webhooks. But streamer.bot is entirely self-hosted on the streamer's PC, so has no way to receive webhook requests. Furthermore, the streamer.bot team provides it for free, so there is no revenue to pay for setting up and running webhook server infrastructure.
+The Kick API delivers events to bots by using Webhooks. Webhooks work fine for cloud-based bots, since those bots already have (and pay for) internet-facing server infrastructure to host the webhooks. But streamer.bot itself is entirely self-hosted on the streamer's PC, and requires additional public server infrastructure in order to integrate with webhooks.
