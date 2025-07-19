@@ -44,13 +44,13 @@ U0JBRR+LCAAAAAAABADtXetvG0eS/37A/g8DYQ3s3rqdfj8CHA6OE3sNbOwg9jo4xPnQj2qJCB9aPuR4
 
 1. Import the above into streamerbot.
 2. On import, it will prompt you to autorun the configuration setup. You can also open the configuration later by running the Test trigger in the "PNG Chat - OPEN CONFIGURATION" action.
-    * `Avatars OBS Scene` : should be the name of the OBS Scene containing the PNG avatars you set up above.
-    * `Message Sound Folder` : If you have sounds for your reactive chat, put the full path to the sound folder here. Otherwise leave it blank.
-      * `Per-user Subfolders` : If you have separate subfolders of sounds for each user, then select this.
-    * `Begin Speaking Delay` : The number of milliseconds delay between receiving the chat message, and displaying the mouth-open image.
-    * `Base Speaking Duration` : Milliseconds that the mouth should remain open (and the chat message displayed, if using that feature)
-    * `Per-letter Speaking Duration` : Adds additional milliseconds for each letter in the chat message.
-    * `After Speaking Delay` : Milliseconds to continue displaying the avatar after it has finished "speaking". To keep the avatar on-screen forever, set this to -1.
+    * **Avatars OBS Scene** : should be the name of the OBS Scene containing the PNG avatars you set up above.
+    * **Message Sound Folder** : If you have sounds for your reactive chat, put the full path to the sound folder here. Otherwise leave it blank.
+        * **Per-user Subfolders** : If you have separate subfolders of sounds for each user, then select this.
+    * **Begin Speaking Delay** : The number of milliseconds delay between receiving the chat message, and displaying the mouth-open image.
+    * **Base Speaking Duration** : Milliseconds that the mouth should remain open (and the chat message displayed, if using that feature)
+    * **Per-letter Speaking Duration** : Adds additional milliseconds for each letter in the chat message.
+    * **After Speaking Delay** : Milliseconds to continue displaying the avatar after it has finished "speaking". To keep the avatar on-screen forever, set this to -1.
 3. Under Settings > Groups, Create a group called "PNG Chatters", and add your friends' accounts to the group.  This will determine who will get an avatar.
   ![Group](ReactiveChat-group.png)
 
