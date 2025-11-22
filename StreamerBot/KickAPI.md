@@ -1,5 +1,6 @@
 # Kick API vs. Kick.bot Feature Comparison
-(as of July 8, 2025)
+(as of July 8, 2025, taken from Kick's API [github](https://github.com/KickEngineering/KickDevDocs) and 
+Sehelitar's Kick.bot [integration wiki](https://github.com/Sehelitar/Kick.bot/wiki))
 
 | FEATURE | Kick API | kick.bot |
 |---------| :-------: | :--------: |
