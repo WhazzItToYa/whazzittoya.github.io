@@ -5,7 +5,7 @@ Sehelitar's Kick.bot [integration wiki](https://github.com/Sehelitar/Kick.bot/wi
 | FEATURE | Kick API | kick.bot |
 |---------| :-------: | :--------: |
 | **REQEUSTS** |
-| Ban/Unban                     X         |  X |
+| Ban/Unban   |                 X         |  X |
 | (un)Timeout |                 X         |  X |
 | Send Message |                X         |  X |
 | Reply to Message |            X         |  X |
@@ -33,6 +33,7 @@ Sehelitar's Kick.bot [integration wiki](https://github.com/Sehelitar/Kick.bot/wi
 | List/Search Livestreams |     X         |    |
 | Get Leaderboards (kicks) |    X         |    |
 | Drops Claimed |               ?         |    |
+| Reward Management |                     |  X |
 |---------| 
 | **EVENTS** ([note](#on-events)) |
 | New follower |                X         |  X |
@@ -41,12 +42,15 @@ Sehelitar's Kick.bot [integration wiki](https://github.com/Sehelitar/Kick.bot/wi
 | Chat Message Deleted |                  |  X |
 | User Banned |                 X         |  X |
 | User Unbanned |                         |  X |
+| User Timed out |              X         |  X |
 | Poll Completed |                        |  X |
 | Stream Started/Ended |        X         |  X |
 | Stream Title/Game Changed |   X         |  X |
 | Sub |                         X         |  X |
 | Subs Gifted |                 X         |  X |
 | Channel Raided |                        |  X |
+| Reward Redeemed |                       |  X |
+| Prediction Created/Completed | X        |  X |
 
 ## On Events
 
