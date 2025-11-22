@@ -1,5 +1,5 @@
 # Kick API vs. Kick.bot Feature Comparison
-(as of July 8, 2025, taken from Kick's API [github](https://github.com/KickEngineering/KickDevDocs) and 
+(as of Nov 22, 2025, taken from Kick's API [github](https://github.com/KickEngineering/KickDevDocs) and 
 Sehelitar's Kick.bot [integration wiki](https://github.com/Sehelitar/Kick.bot/wiki))
 
 | FEATURE | Kick API | kick.bot |
@@ -30,7 +30,9 @@ Sehelitar's Kick.bot [integration wiki](https://github.com/Sehelitar/Kick.bot/wi
 | Change Title |                X         |  X |
 | Make Clip |                             |  X |
 | Get Clips |                             |  X |
-| List/Search Livestreams |     X         |   |
+| List/Search Livestreams |     X         |    |
+| Get Leaderboards (kicks) |    X         |    |
+| Drops Claimed |               ?         |    |
 |---------| 
 | **EVENTS** ([note](#on-events)) |
 | New follower |                X         |  X |
